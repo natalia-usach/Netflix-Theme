@@ -1,0 +1,94 @@
+@media screen and (max-width: 550px) {
+    body {
+        font-size: .8em;
+    }
+
+    .homePage {
+        grid-template-columns: 10fr;
+    }
+
+    .homeImg {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about {
+        margin: 2em;
+        font-size: .8em;
+    }
+
+    .filmImg {
+        width: 6em;
+    }
+
+    table {
+        margin: 0 auto;
+    }
+
+    th {
+        font-size: 1em;
+    }
+
+    td {
+        max-width: 7em;
+    }
+
+    .filmSummary {
+        padding: .5em;
+    }
+
+    .filmDescription {
+        max-height: 6em;
+        overflow: auto;
+    }
+
+    .starEnabled, .starDisabled {
+        font-size: 1.5em;
+    }
+
+    .sorting select {
+        font-size: .9em;
+    }
+
+    .registerPage, .loginPage {
+        min-height: 100vh;
+    }
+
+    .registerPage h1, .loginPage h1 {
+        font-size: 1.5em;
+    }
+
+    .room p {
+        height: 2em;
+        line-height: 2em;
+    }
+
+    .room button {
+        font-size: .9em;
+    }
+
+    .mainPersonalInfo {
+        flex-direction: column;
+    }
+
+    .mainPersonalInfo h2 {
+        font-size: 1.5em;
+    }
+
+    .dropdownList {
+        width: auto;
+    }
+
+    .dropdownList button {
+        border-radius: .5em;
+        padding: .5em;
+        color: white;
+        background-color: black;
+        font-size: .9em;
+        margin-top: 1em;
+    }
+
+    .favourites a {
+        font-size: 1em;
+    }
+}

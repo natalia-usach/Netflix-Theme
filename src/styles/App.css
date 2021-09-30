@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+input {
+    display: block;
+    margin-bottom: 1em;
+    width: 25em;
+    height: 3em;
+    padding: 1em;
+}
+
+h1 {
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+    border-radius: 1em;
+    border: 2px solid gray;
+    padding: .5em;
+}
+
+header {
+    background-color: black;
+    padding: 1em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: red;
+}
+
+.nav {
+    border: 2px solid white;
+    border-radius: 1em;
+    padding: .5em;
+}
+
+.nav:hover {
+    border-color: red;
+}
+
+.active {
+    color: red;
+}
+
+table {
+    clear: both;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 2px solid rgb(216, 42, 42);
+}
+
+th {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.filmSummary {
+    padding: 1em;
+}
+
+.sorting {
+    margin-top: 1em;
+}
+
+.homePage {
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    background: url('./../images/homeBg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about {
+    padding: 1em;
+    margin: 1.5em 2.5em 1.5em 0;
+    background: rgba(255,255,255, 0.6);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-size: .9em;
+    height: 5em;
+    text-align: right;
+    line-height: 5em;
+    padding-right: 3em;
+}
+
+.loginPage, .registerPage {
+    height: 76.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginPage h1, .registerPage h1{
+    margin-top: 1em;
+}
+
+.room {
+    height: auto;
+    padding: 1em;
+}
+
+button[type='submit'] {
+    padding: .5em 1em;
+    border-radius: 1em;
+    background-color: black;
+    color: white;
+    border-color: black;
+    cursor: pointer;
+}
+
+button[type='submit']:hover {
+    background-color: gray;
+    color: black;
+}
+
+.errorMessage {
+    color: red;
+    font-size: .9em;
+    margin-top: 1em;
+}
+
+.room {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.room button {
+    color: red;
+    padding: .5em;
+    border-radius: 1em;
+    border-color: red;
+    cursor: pointer;
+}
+
+.room button:hover {
+    color: white;
+    background-color: red;
+}
+
+.usersList, .friendsList, .favourites {
+    padding: 1em;
+    min-height: 67.5vh;
+    flex-basis: 30%;
+}
+
+.usersList li, .friendsList li, .favourites li {
+    border: none;
+    color: white;
+}
+
+.usersList ul, .friendsList ul, .favourites ul {
+    background-color: rgb(206, 94, 94);
+    padding: 1em;
+    border-radius: 1em;
+    min-height: 50vh;
+}
+
+.usersList h2, .friendsList h2, .favourites h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.listItem {
+    display: flex;
+    justify-content: space-between;
+}
+
+.listItem button {
+    background-color: black;
+    color: white;
+    font-size: .7em;
+    border-radius: 1em;
+    padding: .5em;
+    cursor: pointer;
+    width: 9em;
+}
+
+.listItem button:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+.listItem .removeFriend {
+    background-color: rgb(236, 176, 176);
+    color: black;
+}
+
+.roomErrorMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 76.5vh;
+    font-size: 1.2em;
+}
+
+.roomErrorMessage a {
+    color: red;
+    text-decoration: underline;
+}
+
+.roomErrorMessage div {
+    border: 1px solid black;
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 2px 2px 2px grey, -2px -2px 2px grey;
+}
+
+.mainPersonalInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.starWrapper {
+    float: right;
+}
+
+.starEnabled {
+    float: right;
+    font-size: 2em;
+    color: gold;
+    text-shadow: 1px 1px 1px grey;
+    cursor: pointer;
+}
+
+.starEnabled:hover {
+    color: black;
+}
+
+.starWrapper:hover .text {
+    visibility: visible;
+}
+
+.text {
+    clear: both;
+    float: right;
+    font-size: .7em;
+    visibility: hidden;
+}
+
+.starDisabled {
+    float: right;
+    font-size: 2em;
+    color: black;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px grey;
+}
+
+.shareBtn {
+    float: right;
+    border-radius: .5em;
+    padding: .3em;
+    color: white;
+    background-color: black;
+    font-size: .7em;
+}
+
+.shareBtn:hover, .dropdownList button:hover {
+    color: black;
+    background-color: white;
+}
+
+.dropdownWrapper {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.dropdownList {
+    padding: 2em;
+    border-radius: 1em;
+    background-color: white;
+    width: 10em;
+    transform: scale(.5);
+    transition: .4s all;
+}
+
+.dropdownList div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dropdownList button {
+    border-radius: .5em;
+    padding: .3em;
+    color: white;
+    background-color: black;
+    font-size: .7em;
+    margin-top: 1em;
+}
+
+.dropdownWrapper.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.dropdownList.active {
+    transform: scale(1);
+}
+
+.favourites a {
+    color: black;
+    font-size: .8em;
+    text-decoration: underline;
+}
+
+.favourites p {
+    text-align: right;
+    margin-right: .5em;
+}
+
+.sharedFavourites {
+    min-height: 68vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sharedFavourites li {
+    background-color: rgb(206, 94, 94);
+    margin: .5em;
+}
